@@ -1064,7 +1064,7 @@ __metadata:
     awilix: "npm:12.0.4"
     awilix-express: "npm:9.0.2"
     axios: "npm:1.7.9"
-    bcryptjs: "npm:2.4.3"
+    bcryptjs: "npm:3.0.0"
     better-sqlite3: "npm:11.8.1"
     cache-manager: "npm:6.4.0"
     chokidar: "npm:4.0.3"
@@ -4530,10 +4530,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bcryptjs@npm:2.4.3":
-  version: 2.4.3
-  resolution: "bcryptjs@npm:2.4.3"
-  checksum: 10c0/b969467087ed7a01ff905a1c6a0c45014ec586248a448ea08370c8ed8bb314bda16a870ca23e0961d7d23bdce1a04c76fa70a9d680be814fa9ac7d8fc61870a3
+"bcryptjs@npm:3.0.0":
+  version: 3.0.0
+  resolution: "bcryptjs@npm:3.0.0"
+  bin:
+    bcrypt: bin/bcrypt
+  checksum: 10c0/8737182353d5e59f170475ad92db3d62f53f438f2720188be6bbcae0757f26b05cae0b94d36aa426566e7d24f3ab3e8e049edb21ad680b2d8fb0b2c25bc6a3f0
   languageName: node
   linkType: hard
 
