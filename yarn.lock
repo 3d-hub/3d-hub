@@ -1083,7 +1083,7 @@ __metadata:
     jsonwebtoken: "npm:9.0.2"
     lodash: "npm:4.17.21"
     luxon: "npm:3.5.0"
-    migrate-mongo: "npm:11.0.0"
+    migrate-mongo: "npm:12.1.3"
     mongodb-memory-server: "npm:10.1.3"
     mongoose: "npm:6.13.8"
     multer: "npm:1.4.5-lts.1"
@@ -8234,6 +8234,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.filter@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "lodash.filter@npm:4.6.0"
+  checksum: 10c0/bb65002f3ee02b94400b9d8728a46d3ac9fc3eb7df387b3c642f36eff82d716714283ca674889a29edae3c28ea8a4048e6c7bb90598670ab9c97b5d125bffda2
+  languageName: node
+  linkType: hard
+
+"lodash.find@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "lodash.find@npm:4.6.0"
+  checksum: 10c0/0238f3abc0b87aa441820ab0ab31a81156e1809a66285f454fbea18cbdf4d16572d504dd9e96c22df8a36b81d0272bca9205d09d217d61f9b53fa3358023377f
+  languageName: node
+  linkType: hard
+
+"lodash.get@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "lodash.get@npm:4.4.2"
+  checksum: 10c0/48f40d471a1654397ed41685495acb31498d5ed696185ac8973daef424a749ca0c7871bf7b665d5c14f5cc479394479e0307e781f61d5573831769593411be6e
+  languageName: node
+  linkType: hard
+
 "lodash.has@npm:^4.5.2":
   version: 4.5.2
   resolution: "lodash.has@npm:4.5.2"
@@ -8252,6 +8273,13 @@ __metadata:
   version: 3.0.3
   resolution: "lodash.isboolean@npm:3.0.3"
   checksum: 10c0/0aac604c1ef7e72f9a6b798e5b676606042401dd58e49f051df3cc1e3adb497b3d7695635a5cbec4ae5f66456b951fdabe7d6b387055f13267cde521f10ec7f7
+  languageName: node
+  linkType: hard
+
+"lodash.isempty@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "lodash.isempty@npm:4.4.0"
+  checksum: 10c0/6c7eaa0802398736809b9e8aed8b8ac1abca9be71788fd719ba9d7f5b4c23e8dc63b7f049df4131713dda30a2fdedc2f655268e9deb8cd5a985dfc934afca194
   languageName: node
   linkType: hard
 
@@ -8283,6 +8311,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.last@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "lodash.last@npm:3.0.0"
+  checksum: 10c0/f4446478ce1c7f1220663fcb64c27133c52c7acb727e3e58f2964c32f8ea83f4155b667a76e73fa425ca1a4767e9128b81782061edd5d82a1eb8b2ef99fc9a47
+  languageName: node
+  linkType: hard
+
 "lodash.merge@npm:^4.6.2":
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
@@ -8297,7 +8332,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:4.17.21, lodash@npm:^4.17.21":
+"lodash.values@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "lodash.values@npm:4.3.0"
+  checksum: 10c0/f56b3da5bd3aa0006ad544c8e2e890a35b5aefcb6e3528a4c4f191f091b9edea632dd461de79ee121b5b61881cd96b7f911a309dc04f53af0e927d6a599cf1ee
+  languageName: node
+  linkType: hard
+
+"lodash@npm:4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: 10c0/d8cbea072bb08655bb4c989da418994b073a608dffa608b09ac04b43a791b12aeae7cd7ad919aa4c925f33b48490b5cfe6c1f71d827956071dae2e7bb3a6b74c
@@ -8476,22 +8518,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"migrate-mongo@npm:11.0.0":
-  version: 11.0.0
-  resolution: "migrate-mongo@npm:11.0.0"
+"migrate-mongo@npm:12.1.3":
+  version: 12.1.3
+  resolution: "migrate-mongo@npm:12.1.3"
   dependencies:
     cli-table3: "npm:^0.6.1"
     commander: "npm:^9.1.0"
     date-fns: "npm:^2.28.0"
     fn-args: "npm:^5.0.0"
     fs-extra: "npm:^10.0.1"
-    lodash: "npm:^4.17.21"
+    lodash.filter: "npm:^4.6.0"
+    lodash.find: "npm:^4.6.0"
+    lodash.get: "npm:^4.4.2"
+    lodash.isempty: "npm:^4.4.0"
+    lodash.last: "npm:^3.0.0"
+    lodash.values: "npm:^4.3.0"
     p-each-series: "npm:^2.2.0"
   peerDependencies:
-    mongodb: ^4.4.1 || ^5.0.0 || ^6.0.0
+    mongodb: ^4.4.1 || ^5.0.0 || ^6.0.0  || ^7.0.0
   bin:
     migrate-mongo: bin/migrate-mongo.js
-  checksum: 10c0/c1e413f3377f1f41c251b6d3c18ef4a14b9c194778e5a39323abd72138dc0d9d636882e474e2383dffafdedeaac0a2a2344acc37c5a8655b9ff81f67de05d8ae
+  checksum: 10c0/1fae8977b0b01dd87a5de51048cdaecae181d3c3aa5e7728f75493ca7fa5ed4e9e18e578bb9cdb212d0021e0d262ed046e551fd2aeffa83982a68b5374ca533e
   languageName: node
   linkType: hard
 
