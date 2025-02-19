@@ -1032,7 +1032,7 @@ __metadata:
     "@swc/jest": "npm:0.2.37"
     "@types/adm-zip": "npm:0.5.7"
     "@types/bcryptjs": "npm:2.4.6"
-    "@types/cache-manager": "npm:4.0.6"
+    "@types/cache-manager": "npm:5.0.0"
     "@types/connect-history-api-fallback": "npm:1.5.4"
     "@types/cookie-parser": "npm:1.4.8"
     "@types/express": "npm:5.0.0"
@@ -3417,10 +3417,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/cache-manager@npm:4.0.6":
-  version: 4.0.6
-  resolution: "@types/cache-manager@npm:4.0.6"
-  checksum: 10c0/3cf78d7ec98a03f651ceb31cc7fbd56f25476c90892d3b19a60c645e8fdd6fe7df99b14afde3fcaec407ab8bb5c8e77332dded77b335cad0fc4b06fbf2df5d62
+"@types/cache-manager@npm:5.0.0":
+  version: 5.0.0
+  resolution: "@types/cache-manager@npm:5.0.0"
+  dependencies:
+    cache-manager: "npm:*"
+  checksum: 10c0/b5343f9d5e88d2de55847b203247b6ec56a91915917897d17db9cce75b1cec286d24b7266981860d2b6f5d3a8de6193cf0db3644e04189cc88bfe25657e35db8
   languageName: node
   linkType: hard
 
@@ -4764,7 +4766,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cache-manager@npm:6.4.0":
+"cache-manager@npm:*, cache-manager@npm:6.4.0":
   version: 6.4.0
   resolution: "cache-manager@npm:6.4.0"
   dependencies:
